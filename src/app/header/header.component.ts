@@ -18,10 +18,16 @@ export class HeaderComponent {
 
   constructor(private breakpointObserver: BreakpointObserver) {}
 
-  flag:boolean =true;
+  flag:boolean =false;
 
+  /**
+   * This function show the add blog inputs whrn clicked on Add button
+   * Hides again when click on the same button
+   */
   displayAdd(){
-
+    if(this.flag){
+      this.flag = false;
+    } else this.flag = true
   }
 
 }
