@@ -16,12 +16,14 @@ import { MatCardModule } from '@angular/material/card';
 import { MatMenuModule } from '@angular/material/menu';
 import { ViewBlogsComponent } from './view-blogs/view-blogs.component';
 import { HttpClientModule } from '@angular/common/http';
+import { AddBlogComponent } from './add-blog/add-blog.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    ViewBlogsComponent
+    ViewBlogsComponent,
+    AddBlogComponent
   ],
   imports: [
     BrowserModule,
