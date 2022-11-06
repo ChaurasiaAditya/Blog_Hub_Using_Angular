@@ -17,6 +17,7 @@ import { MatMenuModule } from '@angular/material/menu';
 import { ViewBlogsComponent } from './view-blogs/view-blogs.component';
 import { HttpClientModule } from '@angular/common/http';
 import { AddBlogComponent } from './add-blog/add-blog.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -38,7 +39,8 @@ import { AddBlogComponent } from './add-blog/add-blog.component';
     MatGridListModule,
     MatCardModule,
     MatMenuModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
