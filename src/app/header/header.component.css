@@ -15,3 +15,11 @@
   top: 0;
   z-index: 1;
 }
+
+.icons{
+  margin-left: 75%;
+}
+
+.icons mat-icon{
+  padding-left: 20px;
+}
