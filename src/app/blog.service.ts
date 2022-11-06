@@ -17,4 +17,11 @@ export class BlogService {
     return this.httpClient.get<Array<Blog>>(this.URL)
   }
 
+  // To Add Blogs in the Json File
+  addBlogs(data:Blog) {
+    return this.httpClient.post(this.URL,data)
+  }
+
+  
+
 }
