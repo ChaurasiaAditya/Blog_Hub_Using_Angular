@@ -23,3 +23,9 @@
 .icons mat-icon{
   padding-left: 20px;
 }
+
+.addicon{
+  position: fixed;
+  right: 70px;
+  bottom: 40px;
+}

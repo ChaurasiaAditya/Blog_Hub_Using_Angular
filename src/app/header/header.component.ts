@@ -18,4 +18,10 @@ export class HeaderComponent {
 
   constructor(private breakpointObserver: BreakpointObserver) {}
 
+  flag:boolean =true;
+
+  displayAdd(){
+
+  }
+
 }

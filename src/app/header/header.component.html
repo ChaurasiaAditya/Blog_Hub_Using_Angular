@@ -25,6 +25,13 @@
     </mat-toolbar>
     <!-- Add Content Here -->
     <app-view-blogs></app-view-blogs>
-    <app-add-blog></app-add-blog>
+    <div *ngIf="flag">
+      <app-add-blog></app-add-blog>
+    </div>
+    <div>
+      <button class="addicon" (click)="displayAdd()" mat-fab color="primary">
+        <mat-icon>add</mat-icon>
+      </button>
+    </div>
   </mat-sidenav-content>
 </mat-sidenav-container>
