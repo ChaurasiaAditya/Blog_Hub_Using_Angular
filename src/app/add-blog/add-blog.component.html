@@ -1,1 +1,6 @@
-<p>add-blog works!</p>
+<div id="blog-input">
+    <div class="blog-field"><input type="text" name="title" [(ngModel)]="blog.title" placeholder="Blog Title"></div>
+    <div class="blog-field"><textarea cols="60" rows="15" name="content" [(ngModel)]="blog.content"
+            placeholder="Blog Content"></textarea></div>
+    <div><button (click)="addBlog()">Save</button></div>
+</div>
