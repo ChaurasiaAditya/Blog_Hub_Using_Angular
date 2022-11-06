@@ -8,8 +8,10 @@ import { Blog } from './model/blog';
 })
 export class BlogService {
 
+  // Added HttpCLient in the Constructor parameter
   constructor(private httpClient: HttpClient) { }
 
+  //URL from the Json server
   URL: string = "http://localhost:3000/blogs"
 
   // To get all the Blogs from JSON File
@@ -21,7 +23,4 @@ export class BlogService {
   addBlogs(data:Blog) {
     return this.httpClient.post(this.URL,data)
   }
-
-  
-
 }
