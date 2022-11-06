@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { BlogService } from '../blog.service';
+import { Blog } from '../model/blog';
 
 @Component({
   selector: 'app-view-blogs',
@@ -9,7 +10,10 @@ import { BlogService } from '../blog.service';
 export class ViewBlogsComponent implements OnInit {
 
   // Added BlobService in parameter of constructor
-  constructor(private blogService:BlogService) { }
+  constructor(private blogService: BlogService) { }
+
+  // declare a variable of blog type 
+  blogs: Blog[] = []
 
   ngOnInit(): void {
   }
