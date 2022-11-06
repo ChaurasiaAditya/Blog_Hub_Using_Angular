@@ -5,5 +5,7 @@ import { Injectable } from '@angular/core';
 })
 export class BlogService {
 
+  URL: string = "http://localhost:3000/blogs"
+  
   constructor() { }
 }
