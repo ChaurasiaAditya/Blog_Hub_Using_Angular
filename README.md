@@ -9,7 +9,7 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The appli
 
 ## OUTPUT
 
-    ![](src/assets/blog_hub.JPG)
+![](/src/assets/blog_hub.JPG)
 
 ## Code scaffolding
 
