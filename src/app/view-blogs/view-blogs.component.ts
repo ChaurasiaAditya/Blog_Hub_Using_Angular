@@ -24,7 +24,7 @@ export class ViewBlogsComponent implements OnInit {
     this.blogService.fetchBlogs().subscribe({
       next: (data) => this.blogs = data,
       error: () => alert("Failed to Fetch Blogs due to Network Error!!!"),
-      complete: () => alert("Blog Data Fetched Successfully!!!")
+      // complete: () => alert("Blog Data Fetched Successfully!!!")
     })
   }
 }
