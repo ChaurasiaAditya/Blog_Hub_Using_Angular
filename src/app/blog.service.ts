@@ -8,12 +8,13 @@ import { Blog } from './model/blog';
 })
 export class BlogService {
 
-  constructor(private httpClient:HttpClient) { }
+  constructor(private httpClient: HttpClient) { }
 
   URL: string = "http://localhost:3000/blogs"
 
-  // fetchBlogs():Observable<Array<Blog>>{
-  //   return this.
-  // }
+  // To get all the Blogs from JSON File
+  fetchBlogs(): Observable<Array<Blog>> {
+    return this.httpClient.get<Array<Blog>>(this.URL)
+  }
 
 }
